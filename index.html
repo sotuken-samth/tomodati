@@ -169,36 +169,9 @@
 		//POPUPに初期画像を組み込む
 		PopUpField.Div.appendChild(ImgNormal);
 		var Question = new CommentCls(1,"こんにちは。\n何でも聞いてくださいね。");
+             
 
-	};
-
-
-
-	//リサイズ時に表示位置を変更する
-	window.onresize = function () {
- 
-		timer = setTimeout(function () {
-
-			//待機画像の表示変更
-			Waiter.View();
-			//ポップアップの表示変更
-			PopUpField.View(PopUpHeight - ViewSpeed);
-
-		}, 100);
-	};
-
-	//スクロール時に表示位置を変更する
-	window.onscroll = function () {
-
-		timer = setTimeout(function () {
-
-			//待機画像の表示変更
-			Waiter.View();
-			//ポップアップの表示変更
-			PopUpField.View(PopUpHeight - ViewSpeed);
-
-		}, 100);
-	};
+           };
 
 
 	//コメントクラスの定義
